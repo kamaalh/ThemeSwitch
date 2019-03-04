@@ -1,0 +1,21 @@
+ :root {
+    --bg-color : green;
+}
+
+.light {
+    --bg-color : white;
+    --text-color: gray;
+}
+
+.dark {
+    --bg-color : gray;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1 {
+    color: var(--text-color);
+}

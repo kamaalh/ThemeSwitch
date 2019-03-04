@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Marriott</title>
+    <link rel="stylesheet" type="text/css" href="themes.css"/>
+  </head>
+    <script>
+        function changeTheme(e){
+            //console.log(event.target.value)
+            var bodyClasses = document.body.classList;
+            bodyClasses.remove('light','dark');
+            bodyClasses.add(event.target.value);            
+        }
+    
+    </script>
+  <body class="light">
+      <button onclick="changeTheme()" value="light">Light Theme</button>
+      <button onclick="changeTheme()" value="dark">Dark Theme</button>  
+      <h1>Example of theme switching.</h1>
+  </body>
+</html>
